@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>TaskFlow | Glass To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <div class="header">
+            <h1>📋 TaskFlow</h1>
+            <div class="greeting-wrapper">
+                <p class="greeting" id="greetingPrefix">Good Morning,</p>
+                <span id="userNameDisplay">Nika</span>
+                <button id="editNameBtn" class="edit-name-btn" title="change name">✏️</button>
+            </div>
+            <p class="date" id="currentDate"></p>
+        </div>
+
+        <div class="theme-row">
+            <span>🎨 pick your accent color:</span>
+            <input type="color" id="accentColor" value="#1e3a8a">
+        </div>
+
+        <div class="categories" id="categoryList">
+            <button class="cat" data-cat="today">📅 Today</button>
+            <button class="cat" data-cat="work">💼 Work</button>
+            <button class="cat" data-cat="personal">🧘 Personal</button>
+            <button class="cat" data-cat="family">👪 Family</button>
+            <button class="cat" data-cat="study">📚 Study</button>
+            <button class="cat" data-cat="exercise">🏋️ Exercise</button>
+        </div>
+
+        <div class="add-task-card">
+            <div class="input-group">
+                <input type="text" id="taskText" placeholder="Write a task...">
+                <input type="time" id="taskTime" value="10:00">
+                <button id="addBtn">+ Add</button>
+            </div>
+        </div>
+
+        <div class="tasks-container">
+            <ul id="taskList">
+                <li class="empty-msg">✨ add your first task ✨</li>
+            </ul>
+        </div>
+
+        <div class="stats-glass">
+            <span>📌 pending: <span id="pendingCount">0</span></span>
+            <span>✅ done: <span id="completedCount">0</span></span>
+        </div>
+
+        <footer>
+            built with 🧡 by Nika · 
+            <a href="#">github</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
